@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'boxes/users'
   get 'boxes/bookings'
   root to: 'pages#home'
