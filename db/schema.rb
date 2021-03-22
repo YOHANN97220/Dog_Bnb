@@ -10,9 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_03_22_135927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "bookings", force: :cascade do |t|
+    t.integer "total_price"
+    t.date "start_at"
+    t.date "end_at"
+    t.bigint "user_id", null: false
+    t.bigint "box_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["box_id"], name: "index_bookings_on_box_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
+  create_table "boxes", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "address"
+    t.integer "price_per_day"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_boxes_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
+    t.string "email"
+    t.string "phone_number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "bookings", "boxes"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "boxes", "users"
 end
