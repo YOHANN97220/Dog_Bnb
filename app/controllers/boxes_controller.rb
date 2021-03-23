@@ -14,7 +14,18 @@ class BoxesController < ApplicationController
   end
 
   def create
-    @box = Box.find(params[:id])
-    @box.save
+    @box = Box.new(box_params)
+    @box.user = current_user
+    if @box.save
+      redirect_to @box
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def box_params
+    params.require(:box).permit(:name, :description, :address, :price_per_day)
   end
 end
