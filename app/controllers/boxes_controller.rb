@@ -12,4 +12,9 @@ class BoxesController < ApplicationController
   def new
     @box = Box.new
   end
+
+  def create
+    @box = Box.find(params[:id])
+    @box.save
+  end
 end
