@@ -1,17 +1,39 @@
 #login-container {
-  background-color: #A0A0A0;
+  background-color: white;
   padding: 20px;
-  width: 400px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  margin: 8px;
+  max-width: 400px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(130, 130, 130, 0.5);
+  margin-right: 8vw;
+  margin-top: 8vh;
 }
 
-.container-around {
+.container-around-login {
   background-color: white;
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: asset-url('login-dog.jpg');
+  background-size: cover;
+  background-position-x: center;
+}
+
+#back-to-home-login {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  left: 10px;
+  top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-around-login {
+    justify-content: center;
+  }
+
+  #login-container {
+    margin: auto;
+  }
 }
