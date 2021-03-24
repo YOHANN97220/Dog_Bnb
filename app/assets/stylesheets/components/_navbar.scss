@@ -1,19 +1,42 @@
-.navbar {
-  justify-content: space-between;
-  background: white;
-}
-
-.navbar {
-  flex-grow: 0;
-}
-
-#dog-bnb-navbar {
-  background-color: #282828;
-}
-
 #home-button {
   font-size: 50px;
   color: white;
+  &:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+  }
 }
 
+.navbar-link {
+  color: white;
+  &:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+  }
+}
 
+.navbar-elements {
+  text-align: right;
+}
+
+#login-button {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 12px 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+#line {
+  color: white;
+  font-size: 8px;
+  padding-top: 10px;
+}
