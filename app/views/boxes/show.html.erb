@@ -1,7 +1,8 @@
-<%= render 'shared/navbar' %>
-<p><%= link_to "<<Return to View Boxes", boxes_path %></p>
+<div class="show-container">
+  <%= render 'shared/navbar' %>
+<p><%= link_to "<<Return to View Boxes", boxes_path, id: "back-to-boxes" %></p>
 <div class="box-show-container">
-  <%=@box.image_url  %>
+  <div class="show-image"><%= image_tag @box.image_url, id: "show-image"  %></div>
   <h1> <%= @box.name %> </h1>
   <h3>About this Box</h3>
   <p> <%= @box.description %> </p>
@@ -11,3 +12,5 @@
   Request to book!
   </button>
 </div>
+</div>
+
