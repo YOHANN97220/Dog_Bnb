@@ -25,8 +25,7 @@
   color: black;
 }
 
-
-.card-box .card-box-infos {
+.card-box-infos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -41,4 +40,36 @@
   width: 40px;
 }
 
+.card-box-pricing {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  width: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+}
+
+.index-container{
+  width: 100vw;
+}
+
+#h1-boxes-index {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
