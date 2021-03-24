@@ -1,17 +1,41 @@
-#sign-up-container {
-  background-color: #A0A0A0;
+#signup-container {
+  background-color: #282828;
   padding: 20px;
-  width: 400px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  margin: 8px;
+  width: 600px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(130, 130, 130, 0.5);
+  margin-left: 8vw;
+  color: white;
 }
 
-.container-around {
+.container-around-signup {
   background-color: white;
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
+  background-image: asset-url('signup-dog.jpg');
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+#back-to-home-signup {
+  position: absolute;
+  color: #282828;
+  font-size: 50px;
+  top: 10px;
+  left: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container-around-signup {
+    justify-content: center;
+  }
+
+  #signup-container {
+    margin: 80px auto auto auto;
+    max-width: 400px;
+  }
 }
