@@ -16,34 +16,40 @@ puts '4 users created'
 
 
 boxes1 = Box.create!(
-  name: 'pension maya',
-  address: 'bienne',
-    description: "pension maya et une pension où votre annimal pourra s'epanouire avec ses congenaire ",
-    price_per_day: 100,
-    user: user1
+  name: 'Garderie LORELEI ',
+  address: 'Bussigny',
+    description: "On nous demande parfois si nous sommes une pension familiale ou un chenil !
+    Eh bien… Nous sommes un chenil familial, puisque nous travaillons en famille ! Nos pensionnaires ont leurs lieux propres, notre famille les siens. Mais nous habitons ici et pouvons ainsi assurer la surveillance de nos pensionnaires. Ce qui compte aussi parfois aux yeux du propriétaire de chien, c’est de savoir si les chiens dorment dans un boxe ou au salon. Chez nous ils dorment dans des boxes, et sans canapé, certes, mais les lieux totalement adaptés aux besoins de votre compagnon. Nous sommes toujours étonnés de voir que peu de gens par contre se posent la question des compétences réelles du gardien !",
+    price_per_day: 50,
+    user: user1,
+    image_url: "https://www.lorelei.ch/accueil/coronavirus.jpg"
     )
 boxes2 = Box.create!(
-  name: 'pension maya',
-  address: 'sion',
-    description: "pension maya et une pension où votre annimal pourra s'epanouire avec ses congenaire ",
+  name: 'Chez Gus',
+  address: "Route d'Eschiens 65, 1673 Ecublens",
+    description: "Nous sommes particulièrement attentifs au bien-être de votre chien, mais également à celui de notre voisinage !
+Pour cette raison, chaque nouveau chien ne sera accepté qu’après une période d’essai d’un à deux jours (à la charge du propriétaire). ",
     price_per_day: 100,
-    user: user2
+    user: user2,
+    image_url: "https://chezgus.ch/wp-content/gallery/pensionnaires-2015/lilouquippo2-1.jpg"
     )
 
 boxes3 = Box.create!(
-  name: 'pension maya',
-  address: 'vevey',
-    description: "pension maya et une pension où votre annimal pourra s'epanouire avec ses congenaire ",
-    price_per_day: 100,
-    user: user3
+  name: 'Truffes & Co.',
+  address: 'Route du Stand 5, 1163 Etoy',
+    description: "Depuis 2008, Truffes & Co. est un endroit où les maîtres amènent leurs fidèles compagnons sans culpabiliser et où les chiens viennent avec un plaisir énorme, pour y jouer et y retrouver leurs pairs.",
+    price_per_day: 81,
+    user: user3,
+    image_url: "https://www.truffesandco.ch/uploads/1/0/8/4/108466537/pict3027.jpg"
     )
 
 boxes4 = Box.create!(
-  name: 'pension maya',
-  address: 'lausanne',
-    description: "pension maya et une pension où votre annimal pourra s'epanouire avec ses congenaire ",
-    price_per_day: 100,
-    user: user4
+  name: 'Fun Dog Garderie',
+  address: 'Route Cantonale 12, 1077 Servion',
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
+    price_per_day: 35,
+    user: user4,
+    image_url:"https://fun-dog-garderie.ch/wp-content/uploads/2019/06/Fun-Dog-Garderie-1621x1080.jpg"
     )
 
 
