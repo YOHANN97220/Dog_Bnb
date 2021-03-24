@@ -1,10 +1,10 @@
 <%= render 'shared/navbar' %>
 
-<h1 class="d-flex justify-content-center">Available Pup Boxes </h1>
+<h1 class="d-flex justify-content-center" id="h1-boxes-index">Available Pup Boxes </h1>
 
-<div class="container">
+<div class="index-container">
 
-  <div class="row">
+  <div class="cards">
     <% @boxes.each do |box| %>
       <div class="col-sm">
         <%= render 'shared/card', box: box%>
