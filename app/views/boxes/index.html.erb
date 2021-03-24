@@ -3,15 +3,13 @@
 <h1 class="d-flex justify-content-center">Available Pup Boxes </h1>
 
 <div class="container">
+
   <div class="row">
-    <div class="col-sm">
-      <%= render 'shared/card'%>
-    </div>
-    <div class="col-sm">
-      <%= render 'shared/card'%>
-    </div>
-    <div class="col-sm">
-      <%= render 'shared/card'%>
-    </div>
+    <% @boxes.each do |box| %>
+      <div class="col-sm">
+        <%= render 'shared/card', box: box%>
+      </div>
+    <% end %>
+
   </div>
 </div>
