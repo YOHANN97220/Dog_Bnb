@@ -1,4 +1,14 @@
-.box-show-container {
+.new-booking {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #808080;
+  background-image: asset-url('booking-dog.jpg');
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+.new-booking-container {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
@@ -12,7 +22,7 @@
   margin-top: 10vh;
 }
 
-#back-to-boxes {
+#back-to-box {
   padding-top: 20px;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
@@ -22,26 +32,18 @@
   }
 }
 
-.box-show-image {
-  background-color: grey;
-  background-size: cover;
-  background-position-y: center;
-  background-position-x: right;
-  width: 100vw;
-  height: 100vh;
-}
-
 @media only screen and (max-width: 770px) {
-  .box-show-container {
+  .new-booking-container {
     margin: auto;
     margin-top: 10vh;
   }
 }
 
 @media only screen and (max-width: 630px) {
-  .box-show-container {
+  .new-booking-container {
     margin: 10px;
     margin-top: 10vh;
   }
 }
+
 
