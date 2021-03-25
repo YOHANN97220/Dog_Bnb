@@ -10,7 +10,9 @@ class BoxesController < ApplicationController
     @markers = @boxes.geocoded.map do |box|
       {
         lat: box.latitude,
-        lng: box.longitude
+        lng: box.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { box: box }),
+        image_url: helpers.asset_url(box.image_url)
       }
     end
   end
