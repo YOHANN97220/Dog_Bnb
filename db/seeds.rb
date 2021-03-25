@@ -29,7 +29,7 @@ boxes2 = Box.create!(
   address: "Route d'Eschiens 65, 1673 Ecublens",
     description: "Nous sommes particulièrement attentifs au bien-être de votre chien, mais également à celui de notre voisinage !
 Pour cette raison, chaque nouveau chien ne sera accepté qu’après une période d’essai d’un à deux jours (à la charge du propriétaire). ",
-    price_per_day: 100,
+    price_per_day: 90,
     user: user2,
     image_url: "https://chezgus.ch/wp-content/gallery/pensionnaires-2015/lilouquippo2-1.jpg"
     )

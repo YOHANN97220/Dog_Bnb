@@ -1,4 +1,5 @@
 <div class="card-box">
+  <%= link_to "more info", box_path(box.id), class:"btn btn-info btn-sm", id:"cards-button" %>
   <div class="image" style="background-image: url( <%= box.image_url %>)"  id="card-image"/>
   </div>
   <div class="card-box-infos">
@@ -7,6 +8,5 @@
       <p><%= box.address %></p>
     </div>
       <h2 class="card-box-pricing"><%= box.price_per_day %>CHF</h2>
-      <p><%= link_to "Click for more info", box_path(box.id) %></p>
   </div>
 </div>
