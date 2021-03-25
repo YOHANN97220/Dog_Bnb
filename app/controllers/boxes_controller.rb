@@ -3,6 +3,12 @@ class BoxesController < ApplicationController
 
   def index
     @boxes = Box.all
+    @markers = @boxes.geocoded.map do |box|
+      {
+        lat: box.latitude,
+        lng: box.longitude
+      }
+    end
   end
 
   def show
