@@ -9,7 +9,9 @@
     params[:query],
     class: "form-control",
     placeholder: "Find accomodations near you..."
-    %><%= submit_tag "Woof", class: "btn btn-primary" %>
+    %>
+    <%= select_tag :km, options_for_select([5, 10, 20, 30, 50, 100]), class: "form-control", id: "km" %>
+    <%= submit_tag "Woof", class: "btn btn-primary" %>
   <% end %>
   </div>
 </div>
