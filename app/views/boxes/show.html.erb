@@ -1,14 +1,17 @@
-<div class="show-container">
+<% if @box.image_url? %>
+  <div class="box-show-image" style="background-image: url('<%= image_path @box.image_url%>');">
+<% else %>
+  <div class="box-show-image">
+<% end %>
   <%= render 'shared/navbar' %>
-<p><%= link_to "<<Return to View Boxes", boxes_path, id: "back-to-boxes" %></p>
-<div class="box-show-container">
-  <div class="show-image"><%= image_tag @box.image_url, id: "show-image"  %></div>
-  <h1> <%= @box.name %> </h1>
-  <h3>About this Box</h3>
-  <p> <%= @box.description %> </p>
-  <p> Located: <%= @box.address%> </p>
-  <h4><%= @box.price_per_day%> per day </h4>
- <%= link_to "Request to book!", new_box_booking_path(@box), class:"btn btn-secondary" %>
+  <p><%= link_to "<< Return to the Boxes", boxes_path, id: "back-to-boxes" %></p>
+    <div class="box-show-container">
+      <h1> <%= @box.name %> </h1>
+      <h3>About this Box</h3>
+      <p> <%= @box.description %> </p>
+      <p> Located: <%= @box.address%> </p>
+      <h4><%= @box.price_per_day%> per day </h4>
+      <%= link_to "Request to book!", new_box_booking_path(@box), class:"btn btn-secondary" %>
+    </div>
+  </div>
 </div>
-</div>
-
