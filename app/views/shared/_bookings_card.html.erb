@@ -1,0 +1,14 @@
+<div class="booking-card">
+  <div class="internal-booking-card">
+      <div class="bookings-image" style="background-image: url(https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2560&q=80)">
+      </div>
+      <div class="booking-infos">
+        <div>
+             <h4> <%= booking.box.name %> title</h4>
+           <p>Drop Off: <%= booking.start_at %></p>
+           <p>   Pick Up: <%= booking.end_at %></p>
+        </div>
+        <h4 class="booking-pricing"> <%= booking.box.price_per_day %> 50 CHF per day</h4>
+      </div>
+  </div>
+</div>
