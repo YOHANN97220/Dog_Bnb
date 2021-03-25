@@ -1,1 +1,49 @@
+.new-booking {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #808080;
+  background-image: asset-url('booking-dog.jpg');
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+.new-booking-container {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  background-color:linear-gradient(45deg, rgba(255,255,255,0.5) , rgba(0,212,255,0.5));
+  box-shadow: 6px 6px 50px rgba(52, 58, 64, 0.7);
+  min-height: 300px;
+  max-width: 600px;
+  position: center;
+  padding: 20px;
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+
+#back-to-box {
+  padding-top: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  &:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px grey;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .new-booking-container {
+    margin: auto;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .new-booking-container {
+    margin: 10px;
+    margin-top: 10vh;
+  }
+}
+
 

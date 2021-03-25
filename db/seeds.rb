@@ -53,7 +53,7 @@ boxes4 = Box.create!(
     )
 
 boxes5 = Box.create!(
-  name: 'Fun Dog Garderie',
+  name: 'Chez Urs',
   address: 'Kapuzinerweg 12, 6006 Luzern',
     description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 80,
@@ -62,7 +62,7 @@ boxes5 = Box.create!(
     )
 
 boxes6 = Box.create!(
-  name: 'Fun Dog Garderie',
+  name: 'Start Up Garderie',
   address: 'Neumattstrasse 29, 5000 Aarau',
     description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 40,
@@ -71,7 +71,7 @@ boxes6 = Box.create!(
     )
 
 boxes7 = Box.create!(
-  name: 'Fun Dog Garderie',
+  name: 'Biscot de Chien',
   address: 'Via Tesserete 46, 6900 Lugano',
     description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 35,
@@ -80,8 +80,8 @@ boxes7 = Box.create!(
     )
 
 boxes8 = Box.create!(
-  name: 'Fun Dog Garderie',
-  address: 'Talstrasse 3, 7270 Davos Platz',
+  name: 'Garderie de Rue',
+  address: 'Teufener Strasse 20, 9000 St. Gallen',
     description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 5,
     user: user4,
