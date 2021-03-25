@@ -47,10 +47,46 @@ boxes4 = Box.create!(
   name: 'Fun Dog Garderie',
   address: 'Route Cantonale 12, 1077 Servion',
     description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
-    price_per_day: 35,
+    price_per_day: 20,
     user: user4,
     image_url:"https://fun-dog-garderie.ch/wp-content/uploads/2019/06/Fun-Dog-Garderie-1621x1080.jpg"
     )
 
+boxes5 = Box.create!(
+  name: 'Fun Dog Garderie',
+  address: 'Kapuzinerweg 12, 6006 Luzern',
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
+    price_per_day: 80,
+    user: user4,
+    image_url:"https://images.unsplash.com/photo-1585071550721-fdb362ae2b8d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    )
 
-puts '4 boxes created'
+boxes6 = Box.create!(
+  name: 'Fun Dog Garderie',
+  address: 'Neumattstrasse 29, 5000 Aarau',
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
+    price_per_day: 40,
+    user: user4,
+    image_url:"https://images.unsplash.com/photo-1551209028-8bbf88d0044f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+    )
+
+boxes7 = Box.create!(
+  name: 'Fun Dog Garderie',
+  address: 'Via Tesserete 46, 6900 Lugano',
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
+    price_per_day: 35,
+    user: user4,
+    image_url:"https://images.unsplash.com/photo-1596653048897-c0f1484995d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1909&q=80"
+    )
+
+boxes8 = Box.create!(
+  name: 'Fun Dog Garderie',
+  address: 'Talstrasse 3, 7270 Davos Platz',
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
+    price_per_day: 5,
+    user: user4,
+    image_url:"https://images.unsplash.com/photo-1596478263363-a5f6ed89d1ee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    )
+
+
+puts '8 boxes created'
