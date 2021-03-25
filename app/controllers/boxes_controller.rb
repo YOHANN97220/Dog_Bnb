@@ -2,7 +2,11 @@ class BoxesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @boxes = Box.all
+    if params[:query].present?
+      @boxes = Box.near(params[:query], params[:km])
+    else
+      @boxes = Box.all
+    end
     @markers = @boxes.geocoded.map do |box|
       {
         lat: box.latitude,
