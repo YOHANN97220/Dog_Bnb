@@ -1,1 +1,62 @@
-// Specific CSS for your home-page
+#home-span {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.home-form {
+  width: 80vw;
+  padding-right: 20px;
+}
+
+#town-form {
+  width: 500px;
+  margin-right: 10px;
+}
+
+#info-button {
+  margin-left: 10px;
+}
+
+.algolia-places {
+  width: 500px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#km {
+  margin-bottom: 10px;
+  width: 70px;
+}
+
+#info-button {
+  margin-bottom: 10px;
+}
+
+#search-form-container {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 770px) {
+  #search-form-container {
+  padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #town-form {
+    width: 370px;
+  }
+
+  .algolia-places {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #town-form {
+    width: 300px;
+  }
+
+  .algolia-places {
+    width: 300px;
+  }
+}
