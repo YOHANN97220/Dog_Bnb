@@ -16,8 +16,14 @@
       </li>
       <% end %>
       <p id="line">____________________________________________________________</p>
-      <li><%= link_to "Boxes", boxes_path, class: "navbar-link" %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Boxes", boxes_path, class: "navbar-link" %></li>
+        <li><%= link_to "My Bookings", bookings_path, class: "navbar-link" %></li>
+      <% else %>
+        <li><%= link_to "Boxes", boxes_path, class: "navbar-link" %></li>
+      <% end %>
     </ul>
   </div>
   </div>
 </nav>
+
