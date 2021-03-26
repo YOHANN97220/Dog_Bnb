@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Booking.destroy_all
+Box.destroy_all
 User.destroy_all
 puts 'all user destroyed'
 user1 = User.create!(username:"daniela", phonenumber:"079118201", password:"123456", email:"daniela@email.com")
@@ -18,29 +20,27 @@ puts '4 users created'
 boxes1 = Box.create!(
   name: 'Garderie LORELEI ',
   address: 'Bussigny',
-    description: "On nous demande parfois si nous sommes une pension familiale ou un chenil !
-    Eh bien… Nous sommes un chenil familial, puisque nous travaillons en famille ! Nos pensionnaires ont leurs lieux propres, notre famille les siens. Mais nous habitons ici et pouvons ainsi assurer la surveillance de nos pensionnaires. Ce qui compte aussi parfois aux yeux du propriétaire de chien, c’est de savoir si les chiens dorment dans un boxe ou au salon. Chez nous ils dorment dans des boxes, et sans canapé, certes, mais les lieux totalement adaptés aux besoins de votre compagnon. Nous sommes toujours étonnés de voir que peu de gens par contre se posent la question des compétences réelles du gardien !",
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 50,
     user: user1,
-    image_url: "https://www.lorelei.ch/accueil/coronavirus.jpg"
+    image_url: "https://images.unsplash.com/photo-1508568230916-c2692a5d7b1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
     )
 boxes2 = Box.create!(
   name: 'Chez Gus',
   address: "Route d'Eschiens 65, 1673 Ecublens",
-    description: "Nous sommes particulièrement attentifs au bien-être de votre chien, mais également à celui de notre voisinage !
-Pour cette raison, chaque nouveau chien ne sera accepté qu’après une période d’essai d’un à deux jours (à la charge du propriétaire). ",
+description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 90,
     user: user2,
-    image_url: "https://chezgus.ch/wp-content/gallery/pensionnaires-2015/lilouquippo2-1.jpg"
+    image_url: "https://images.unsplash.com/photo-1534120247760-c44c3e4a62f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
     )
 
 boxes3 = Box.create!(
   name: 'Truffes & Co.',
   address: 'Route du Stand 5, 1163 Etoy',
-    description: "Depuis 2008, Truffes & Co. est un endroit où les maîtres amènent leurs fidèles compagnons sans culpabiliser et où les chiens viennent avec un plaisir énorme, pour y jouer et y retrouver leurs pairs.",
+    description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 81,
     user: user3,
-    image_url: "https://www.truffesandco.ch/uploads/1/0/8/4/108466537/pict3027.jpg"
+    image_url: "https://images.unsplash.com/photo-1511467134950-e3c968bf539d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
     )
 
 boxes4 = Box.create!(
@@ -49,7 +49,7 @@ boxes4 = Box.create!(
     description: "Chez nous tous les chiens ont la même attention de notre part, donc logiquement petit ou grand c’est le même prix. ",
     price_per_day: 20,
     user: user4,
-    image_url:"https://fun-dog-garderie.ch/wp-content/uploads/2019/06/Fun-Dog-Garderie-1621x1080.jpg"
+    image_url:"https://images.unsplash.com/photo-1520891309540-863309442d8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1041&q=80"
     )
 
 boxes5 = Box.create!(
