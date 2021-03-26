@@ -17,8 +17,9 @@ class BookingsController < ApplicationController
     @box = Box.find(params[:box_id])
     @booking = Booking.new(booking_params)
     @booking.box = @box
+    @booking.user = current_user
     if @booking.save
-      redirect_to booking_path(@box)
+      redirect_to bookings_path
     else
       render :new
     end
