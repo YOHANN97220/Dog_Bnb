@@ -10,3 +10,16 @@
 }
 
 
+.map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+// @media (min-width: 1200px)
+.map {
+    display: block;
+}
+// @media (min-width: 576px)
+.map {
+    display: none;
+}
