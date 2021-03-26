@@ -6,7 +6,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="navbar-elements">
+    <div class="navbar-elements" id="navbaropen">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li><%= link_to "logout", destroy_user_session_path, id: "login-button", :method => :delete  %></li>
