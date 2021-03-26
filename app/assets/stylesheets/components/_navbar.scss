@@ -17,6 +17,7 @@
 
 .navbar-elements {
   text-align: right;
+  z-index: 10;
 }
 
 #login-button {
@@ -40,3 +41,16 @@
   font-size: 8px;
   padding-top: 10px;
 }
+
+
+#dog-bnb-navbar{
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+
+
+#navbaropen{
+  z-index:10;
+}
+
