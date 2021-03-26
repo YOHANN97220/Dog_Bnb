@@ -8,7 +8,18 @@
 
 .container-popup{
   border-radius: 30px;
+  color: black;
+  border-color: none;
+
 }
-.btn{
-  text-decoration: none;
+
+
+.text p{
+  text-align:center;
+
+}
+
+.popup :hover >a h3 p{
+  -webkit-filter: opacity(.5);
+  filter: opacity(.5);
 }

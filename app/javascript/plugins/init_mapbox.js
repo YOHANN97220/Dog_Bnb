@@ -13,7 +13,7 @@ const buildMap = (mapElement) => {
 
 const addMarkerToMap = (map,markers) => {
     markers.forEach((marker) => {
-      const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
+      const popup = new mapboxgl.Popup({focusAfterOpen: false}).setHTML(marker.infoWindow);
       new mapboxgl.Marker()
         .setLngLat([ marker.lng, marker.lat ])
         .setPopup(popup)
